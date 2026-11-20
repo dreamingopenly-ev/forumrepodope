@@ -468,6 +468,19 @@ html,body{ overflow-x:clip; }
 .breakout .gallery .g-tall img, .breakout .gallery .portrait img{ aspect-ratio:3/4; }
 .breakout .gallery figcaption{ flex:none; }
 
+/* people cards */
+.people{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; }
+@media (max-width:820px){ .people{ grid-template-columns:1fr; } }
+.person{ background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; }
+.person img{ width:100%; aspect-ratio:1/1; object-fit:cover; object-position:center 12%; }
+.person .pbody{ padding:1.1rem 1.2rem 1.3rem; }
+.person .inst{ font-family:var(--display); font-weight:800; text-transform:uppercase; letter-spacing:.08em; font-size:.72rem; color:var(--magenta); }
+.person h3{ margin:.35rem 0 .3rem !important; color:var(--blue) !important; font-size:1.1rem !important; text-transform:none !important; }
+.person p{ margin:0; font-size:.92rem; }
+.credit{ display:block; font-size:.72rem; color:var(--muted); margin-top:.5rem; }
+.figure{ margin:2rem 0; border-radius:18px; overflow:hidden; border:1px solid var(--line); background:var(--card); }
+.figure img{ width:100%; }
+
 /* CTA band */
 .cta-band{ background:var(--blue); color:#fff; border-radius:22px; padding:clamp(1.6rem,4vw,2.8rem); margin:3rem auto 0; max-width:1000px;
   display:grid; grid-template-columns:1.4fr 1fr; gap:1.4rem; align-items:center; position:relative; overflow:hidden; }
@@ -537,6 +550,11 @@ html,body{ overflow-x:clip; }
 <div class="chips reveal"><span class="chip">Spain</span><span class="chip">Italy</span><span class="chip">Portugal</span><span class="chip">France</span><span class="chip">Romania</span><span class="chip">Germany</span><span class="chip">Bulgaria</span><span class="chip">Belgium</span><span class="chip">Armenia</span><span class="chip">Czech Republic</span><span class="chip">Greece</span><span class="chip">Poland</span><span class="chip">Cabo Verde</span><span class="chip">Hungary</span><span class="chip">Austria</span><span class="chip">Croatia</span><span class="chip">Ireland</span><span class="chip">Serbia</span><span class="chip">Netherlands</span><span class="chip">Malta</span><span class="chip">Cyprus</span><span class="chip">T&uuml;rkiye</span><span class="chip">Sweden</span><span class="chip">Slovakia</span><span class="chip">Albania</span></div>
 </div>
 <div class="breakout">
+  <div class="panel reveal" style="margin-bottom:1.1rem">
+    <p class="blockhead">Signatures by country</p>
+    <div class="bars"><div class="bar"><div class="lab">Spain</div><div class="track"><div class="fill" style="width:59%">20</div></div></div><div class="bar"><div class="lab">Italy</div><div class="track"><div class="fill" style="width:32%">11</div></div></div><div class="bar"><div class="lab">Portugal</div><div class="track"><div class="fill" style="width:26%">9</div></div></div><div class="bar"><div class="lab">France</div><div class="track"><div class="fill" style="width:24%">8</div></div></div><div class="bar"><div class="lab">Romania</div><div class="track"><div class="fill" style="width:24%">8</div></div></div><div class="bar"><div class="lab">Germany</div><div class="track"><div class="fill" style="width:18%">6</div></div></div><div class="bar"><div class="lab">Bulgaria</div><div class="track"><div class="fill" style="width:15%">5</div></div></div><div class="bar"><div class="lab">18 other countries</div><div class="track"><div class="fill lilac" style="width:100%">34</div></div></div></div>
+    <p class="source">Signatures received by mid-September 2026, by the country given by each signatory.</p>
+  </div>
   <div class="panel reveal">
     <p class="blockhead">Signatures received through the online form, week by week</p>
     <div class="bars"><div class="bar"><div class="lab">Week of 6 Jul</div><div class="track"><div class="fill" style="width:30%">11</div></div></div><div class="bar"><div class="lab">Week of 13 Jul</div><div class="track"><div class="fill pink" style="width:100%">37</div></div></div><div class="bar"><div class="lab">Week of 20 Jul</div><div class="track"><div class="fill" style="width:46%">17</div></div></div><div class="bar"><div class="lab">Week of 27 Jul</div><div class="track"><div class="fill" style="width:9%">1</div></div></div><div class="bar"><div class="lab">Week of 3 Aug</div><div class="track"><div class="fill" style="width:54%">20</div></div></div><div class="bar"><div class="lab">Week of 10 Aug</div><div class="track"><div class="fill" style="width:35%">13</div></div></div><div class="bar"><div class="lab">Week of 17 Aug</div><div class="track"><div class="fill" style="width:9%">1</div></div></div><div class="bar"><div class="lab">Week of 24 Aug</div><div class="track"><div class="fill" style="width:9%">1</div></div></div></div>
@@ -544,11 +562,6 @@ html,body{ overflow-x:clip; }
   </div>
 </div>
 <div class="body">
-
-<h2>In their words</h2>
-<p>Many signatories added a message to their signature. Two of them:</p>
-<blockquote><p>We fully support this position paper that aims at having a stronger and more solid Erasmus programme for the future.</p><cite>garagErasmus Foundation</cite></blockquote>
-<blockquote><p>The future Erasmus+ Programme should maintain and strengthen meaningful, adequately funded participation for youth and youth organisations from Partner Countries, including Armenia.</p><cite>Uniting Bridge Social NGO, Armenia</cite></blockquote>
 
 <h2>Next stop: Brussels</h2>
 <p>On 22 September we will take the Paper, and the 101 signatures behind it, to the European Parliament and the European Commission. A week later, on 29 September, the Parliament&rsquo;s Culture and Education Committee votes on its report on the next Erasmus+.</p>
@@ -568,7 +581,7 @@ html,body{ overflow-x:clip; }
       <div class="cards"><a class="card reveal" href="what-the-2027-guide-tells-us.html" data-cat="erasmus">
   <img src="../img/news/cover-what-the-2027-guide-tells-us.jpg" alt="Cover graphic: What the 2027 Guide tells us about the future of Erasmus+." loading="lazy">
   <div class="cbody"><span class="tag">Erasmus+ updates</span><h3>What the 2027 Guide tells us about <span class="pink">the future of Erasmus+</span></h3><p>The last Guide of the current programme already points towards 2028&ndash;2034. We read it line by line against the 2026 edition, through the four demands of our Collective Position Paper.</p>
-  <span class="meta">20 November 2026<span class="dot">·</span>5 min read</span></div>
+  <span class="meta">20 November 2026<span class="dot">·</span>6 min read</span></div>
 </a><a class="card reveal" href="programme-guide-2027-is-out.html" data-cat="erasmus">
   <img src="../img/news/cover-programme-guide-2027-is-out.jpg" alt="Cover graphic: The 2027 Programme Guide is out." loading="lazy">
   <div class="cbody"><span class="tag">Erasmus+ updates</span><h3>The 2027 Erasmus+ Programme Guide <span class="pink">is out</span></h3><p>The European Commission has published the rules, deadlines and funding for the last year of the current programme. These are the changes organisations should know before the first deadlines in February.</p>
