@@ -320,6 +320,9 @@ html,body{ overflow-x:clip; }
 /* ============ News section ============ */
 .news-hero{ padding-bottom:1.2rem; }
 .news-hero h1{ font-size:clamp(2.8rem,8vw,6rem); }
+.news-hero{ min-height:440px; padding-bottom:0; }
+.news-hero .hero-squiggle{ width:min(32vw,360px); top:2%; right:-1%; }
+@media (max-width:640px){ .news-hero{ min-height:0; } .news-hero .hero-squiggle{ width:55vw; right:-14%; } }
 .filters{ display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 2rem; }
 .filters button{
   font-family:var(--display); text-transform:uppercase; font-weight:700; font-size:.76rem; letter-spacing:.06em;
@@ -536,7 +539,7 @@ html,body{ overflow-x:clip; }
 <div class="breakout">
   <div class="people">
     <article class="person reveal"><img src="../img/news/ep-portrait-zdrojewski.jpg" alt="Official portrait of MEP Bogdan Zdrojewski." loading="lazy"><div class="pbody"><span class="inst">European Parliament</span><h3>MEP Bogdan Zdrojewski</h3><p>Rapporteur on the next Erasmus+ in the CULT Committee. We met him and his Head of Office, Katarzyna Biniaszczyk.</p><span class="credit">Photo: &copy; European Union, Source: EP</span></div></article>
-    <article class="person reveal"><img src="../img/news/ec-portrait-minzatu.jpg" alt="Official portrait of Executive Vice-President Roxana M&icirc;nzatu." loading="lazy"><div class="pbody"><span class="inst">European Commission</span><h3>Executive Vice-President Roxana M&icirc;nzatu</h3><p>Responsible for Social Rights and Skills, Quality Jobs and Preparedness. We met her cabinet, with C&#259;t&#259;lin Gheran.</p><span class="credit">Photo: &copy; European Union</span></div></article>
+    <article class="person reveal"><img src="../img/news/ec-portrait-minzatu.jpg" alt="Official portrait of Executive Vice-President Roxana M&icirc;nzatu." loading="lazy"><div class="pbody"><span class="inst">European Commission</span><h3>Executive Vice-President Roxana M&icirc;nzatu</h3><p>Responsible for Social Rights and Skills, Quality Jobs and Preparedness. We met her cabinet, with Mr C&#259;t&#259;lin Gheran.</p><span class="credit">Photo: &copy; European Union</span></div></article>
     <article class="person reveal"><img src="../img/news/ep-portrait-sieper.jpg" alt="Official portrait of MEP Lukas Sieper." loading="lazy"><div class="pbody"><span class="inst">European Parliament</span><h3>MEP Lukas Sieper</h3><p>Renew Europe, Germany. One of the youngest Members of the Parliament, with a strong interest in youth participation. We met his team.</p><span class="credit">Photo: &copy; European Union, Source: EP</span></div></article>
   </div>
 </div>
@@ -547,7 +550,7 @@ html,body{ overflow-x:clip; }
 <p>The office invited the Forum to take part in the next phases as a civil society voice.</p>
 
 <h3>With the Commission</h3>
-<p>At the cabinet of Executive Vice-President M&icirc;nzatu, we presented the Paper and discussed each request. We were invited to continue the conversation in 2027.</p>
+<p>At the cabinet of Executive Vice-President M&icirc;nzatu, we met <strong>Mr C&#259;t&#259;lin Gheran</strong>. We presented the Paper and discussed each request, and we were invited to continue the conversation in 2027.</p>
 
 <h3>With MEP Lukas Sieper&rsquo;s team</h3>
 <p>Mr Sieper does not work directly on the Erasmus+ file, but has shown a strong interest in youth participation. His team expressed interest in supporting the Forum&rsquo;s advocacy.</p>
@@ -555,16 +558,13 @@ html,body{ overflow-x:clip; }
 <div class="breakout">
   <div class="gallery reveal">
     <figure class="g-third portrait"><img src="../img/news/brussels-paper-berlaymont.jpg" alt="The Position Paper held up in front of the Berlaymont building of the European Commission." loading="lazy"><figcaption>The Paper outside the European Commission.</figcaption></figure>
-    <figure class="g-third portrait"><img src="../img/news/brussels-commission.jpg" alt="The delegation with representatives of the European Commission." loading="lazy"><figcaption>Federico Giordano Mederos at the cabinet of Executive Vice-President M&icirc;nzatu.</figcaption></figure>
+    <figure class="g-third portrait"><img src="../img/news/brussels-commission.jpg" alt="The delegation with representatives of the European Commission." loading="lazy"><figcaption>Federico Giordano Mederos with Mr C&#259;t&#259;lin Gheran at the cabinet of Executive Vice-President M&icirc;nzatu.</figcaption></figure>
     <figure class="g-third portrait"><img src="../img/news/brussels-democracy.jpg" alt="A delegate inside the Democracy in Action frame outside the European Parliament." loading="lazy"><figcaption>Federico Giordano Mederos in the Democracy in Action frame outside the Parliament.</figcaption></figure>
     <figure class="g-half portrait"><img src="../img/news/brussels-team.jpg" alt="Three people holding the Position Paper in front of the European Parliament backdrop." loading="lazy"><figcaption>Milena Pallotta and Federico Giordano Mederos with MEP Lukas Sieper&rsquo;s team.</figcaption></figure>
     <figure class="g-half portrait"><img src="../img/news/brussels-grand-place.jpg" alt="The delegation holding the Paper on the Grand-Place in Brussels." loading="lazy"><figcaption>Federico Giordano Mederos and Milena Pallotta on the Grand-Place at the end of the day.</figcaption></figure>
   </div>
 </div>
 <div class="body">
-
-<h2>#VoicesToBrussels</h2>
-<p>While the delegation was in meetings, signatories across Europe shared the Forum&rsquo;s stories on Instagram with <strong>#VoicesToBrussels</strong>, so that the Paper arrived with people behind it, not only names on a list. Thank you to everyone who took part.</p>
 
 <h2>What comes next</h2>
 <p>We came back very satisfied with the interest we found. On 29 September the CULT Committee votes on the rapporteur&rsquo;s report; the full Parliament and the negotiations with the Council follow. We will report on the vote, and keep sharing the Paper with the decision-makers in the institutions and in the Member States, where the budget will finally be decided.</p>
@@ -582,7 +582,7 @@ html,body{ overflow-x:clip; }
       <div class="cards"><a class="card reveal" href="what-the-2027-guide-tells-us.html" data-cat="erasmus">
   <img src="../img/news/cover-what-the-2027-guide-tells-us.jpg" alt="Cover graphic: What the 2027 Guide tells us about the future of Erasmus+." loading="lazy">
   <div class="cbody"><span class="tag">Erasmus+ updates</span><h3>What the 2027 Guide tells us about <span class="pink">the future of Erasmus+</span></h3><p>The last Guide of the current programme already points towards 2028&ndash;2034. We read it line by line against the 2026 edition, through the four demands of our Collective Position Paper.</p>
-  <span class="meta">20 November 2026<span class="dot">·</span>6 min read</span></div>
+  <span class="meta">20 November 2026<span class="dot">·</span>5 min read</span></div>
 </a><a class="card reveal" href="programme-guide-2027-is-out.html" data-cat="erasmus">
   <img src="../img/news/cover-programme-guide-2027-is-out.jpg" alt="Cover graphic: The 2027 Programme Guide is out." loading="lazy">
   <div class="cbody"><span class="tag">Erasmus+ updates</span><h3>The 2027 Erasmus+ Programme Guide <span class="pink">is out</span></h3><p>The European Commission has published the rules, deadlines and funding for the last year of the current programme. These are the changes organisations should know before the first deadlines in February.</p>
@@ -590,7 +590,7 @@ html,body{ overflow-x:clip; }
 </a><a class="card reveal" href="cult-committee-vote.html" data-cat="advocacy">
   <img src="../img/news/cover-cult-committee-vote.jpg" alt="Cover graphic: The CULT Committee votes, 24 in favour, 1 against, 1 abstention." loading="lazy">
   <div class="cbody"><span class="tag">Advocacy</span><h3>The Culture Committee votes on <span class="pink">the next Erasmus+</span></h3><p>On 29 September the European Parliament&rsquo;s Culture and Education Committee adopted its report on Erasmus+ 2028&ndash;2034. What it says, how it compares with the Paper, and where the negotiations stand now.</p>
-  <span class="meta">30 September 2026<span class="dot">·</span>3 min read</span></div>
+  <span class="meta">30 September 2026<span class="dot">·</span>2 min read</span></div>
 </a></div>
     </div>
   </section>

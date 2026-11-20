@@ -320,6 +320,9 @@ html,body{ overflow-x:clip; }
 /* ============ News section ============ */
 .news-hero{ padding-bottom:1.2rem; }
 .news-hero h1{ font-size:clamp(2.8rem,8vw,6rem); }
+.news-hero{ min-height:440px; padding-bottom:0; }
+.news-hero .hero-squiggle{ width:min(32vw,360px); top:2%; right:-1%; }
+@media (max-width:640px){ .news-hero{ min-height:0; } .news-hero .hero-squiggle{ width:55vw; right:-14%; } }
 .filters{ display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 2rem; }
 .filters button{
   font-family:var(--display); text-transform:uppercase; font-weight:700; font-size:.76rem; letter-spacing:.06em;
@@ -518,7 +521,7 @@ html,body{ overflow-x:clip; }
       <p class="crumbs"><a href="index.html">News</a> &nbsp;/&nbsp; <span class="tag">Erasmus+ updates</span></p>
       <h1>What the 2027 Guide tells us about <span class="pink">the future of Erasmus+</span></h1>
       <p class="lead">The last Guide of the current programme already points towards 2028&ndash;2034. We read it line by line against the 2026 edition, through the four demands of our Collective Position Paper.</p>
-      <p class="meta"><time datetime="2026-11-20">20 November 2026</time><span class="dot">·</span>6 min read</p>
+      <p class="meta"><time datetime="2026-11-20">20 November 2026</time><span class="dot">·</span>5 min read</p>
     </div>
   </section>
   <div class="wrap reveal">
@@ -588,23 +591,6 @@ html,body{ overflow-x:clip; }
 </div>
 <div class="body">
 
-<h2>The vocabulary is changing</h2>
-<p>A simple count of words across the whole Guide shows where the emphasis is moving. It is an illustration, not a measure: the counts include every mention, in every action.</p>
-</div>
-<div class="breakout">
-  <div class="panel reveal">
-    <p class="blockhead">Mentions in the whole Programme Guide</p>
-    <div class="bars">
-      <div class="bar"><div class="lab">&ldquo;Basic skills&rdquo;<small>2026 Guide</small></div><div class="track"><div class="fill lilac" style="width:25%">17</div></div></div>
-      <div class="bar"><div class="lab">&ldquo;Basic skills&rdquo;<small>2027 Guide</small></div><div class="track"><div class="fill pink" style="width:55%">37</div></div></div>
-      <div class="bar"><div class="lab">&ldquo;AI&rdquo; or &ldquo;artificial intelligence&rdquo;<small>2026 Guide</small></div><div class="track"><div class="fill lilac" style="width:39%">26</div></div></div>
-      <div class="bar"><div class="lab">&ldquo;AI&rdquo; or &ldquo;artificial intelligence&rdquo;<small>2027 Guide</small></div><div class="track"><div class="fill" style="width:100%">67</div></div></div>
-    </div>
-    <p class="source">Whole-text counts in version 1 of each Guide. Indicative only.</p>
-  </div>
-</div>
-<div class="body">
-
 <h2>A higher bar for partnerships</h2>
 <p>One change will be felt in every round of partnership applications. To be funded, a proposal now needs 70% of the points available for relevance, instead of roughly half. New criteria reward projects &ldquo;initiated, developed, and carried out by organisations actively involved in the field&rdquo; and partnerships with &ldquo;demonstrated experience&rdquo; (p.240&ndash;241, p.249).</p>
 </div>
@@ -655,7 +641,7 @@ html,body{ overflow-x:clip; }
 </a><a class="card reveal" href="cult-committee-vote.html" data-cat="advocacy">
   <img src="../img/news/cover-cult-committee-vote.jpg" alt="Cover graphic: The CULT Committee votes, 24 in favour, 1 against, 1 abstention." loading="lazy">
   <div class="cbody"><span class="tag">Advocacy</span><h3>The Culture Committee votes on <span class="pink">the next Erasmus+</span></h3><p>On 29 September the European Parliament&rsquo;s Culture and Education Committee adopted its report on Erasmus+ 2028&ndash;2034. What it says, how it compares with the Paper, and where the negotiations stand now.</p>
-  <span class="meta">30 September 2026<span class="dot">·</span>3 min read</span></div>
+  <span class="meta">30 September 2026<span class="dot">·</span>2 min read</span></div>
 </a><a class="card reveal" href="from-leipzig-to-brussels.html" data-cat="advocacy">
   <img src="../img/news/brussels-parliament-meeting.jpg" alt="Milena Pallotta, Federico Giordano Mederos and MEP Bogdan Zdrojewski holding the Position Paper at the European Parliament." loading="lazy">
   <div class="cbody"><span class="tag">Advocacy</span><h3>From Leipzig <span class="pink">to Brussels</span></h3><p>On 22 September we took the Collective Position Paper to the European Parliament and the European Commission, a week before the Culture and Education Committee voted on the next Erasmus+.</p>
